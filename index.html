@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-     <div class="add-edit">
-        <div class="add-edit-header"></div>
-     </div>
-     <div class="force-table"></div>
-     <div class="force-table-header"></div>
-</body>
+  </head>
+  <body>
+    <div class="add-edit">
+      <div class="add-edit-header">
+        <p>BATALION FORCE MANAGMENT</p>
+      </div>
+      <div class="add-edit-form">
+        <input class="my-input" type="text" placeholder="Full Name" required />
+        <input class="my-input" type="text" placeholder="Rank" required />
+        <input class="my-input" type="text" placeholder="Position" required />
+        <input class="my-input" type="text" placeholder="Platoon" required />
+        <input
+          class="my-input"
+          type="number"
+          placeholder="Mission time"
+          required
+        />
+        <select class="my-input" id="">
+          <option value="Active" selected>Active</option>
+          <option value="Retired">Retired</option>
+          <option value="Reserve">Reserve</option>
+        </select>
+        <div class="subm">Add personnal</div>
+        <div class="cenc disp-none">Cencel</div>
+      </div>
+      <div></div>
+    </div>
+    <div class="force-table">
+      <div class="force-table-header">
+        <p>FORCES OVERVIEW</p>
+      </div>
+      <table>
+        <tr>
+          <th>Full Name</th>
+          <th>RANK</th>
+          <th>POSITION</th>
+          <th>PLATON</th>
+          <th>STATUS</th>
+          <th>ACTIONS</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>Griffin</td>
+          <td>Griffin</td>
+          <td>Griffin</td>
+          <td>
+            <div class="actions-div">
+              <div class="action">dh</div>
+              <div class="action">dh</div>
+              <div class="action">dh</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>

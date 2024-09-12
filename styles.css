@@ -1,4 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     height: 100vh;
+    background-color: rgba(10, 44, 73, 0.918);
+}
+
+.add-edit{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.force-table{
+    height: 60vh;
+    /* background-color: aquamarine; */
+}
+
+.add-edit-header{
+    /* position: absolute; */
+    /* top: 0; */
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid rgb(4, 184, 4);
+    color: rgb(4, 184, 4);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.force-table-header{
+    height: 70px;
+    border-bottom: 3px solid rgb(4, 184, 4);
+    color: rgb(4, 184, 4);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+th{
     background-color: aliceblue;
+    color: rgb(4, 184, 4);
+    border: 1px solid white;
+}
+
+td{
+    color: white;
+    border: 1px solid white;
+    height: 70PX;
+    padding: 10PX;
+}
+
+.actions-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-direction: column;
+}
+
+.action{
+    background-color: rgb(2, 139, 2);
+    width: 90%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.add-edit-form{
+    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(50, 80, 107, 0.89);
+    padding: 60px;
+    border-radius: 7px;
+}
+
+.my-input{
+    width: 90%;
+    border-radius: 4px;
+    background-color: rgb(26, 61, 92);
+    color: aliceblue;
+    
+}
+
+.subm{
+    background-color: rgb(4, 184, 4);
+    width: 90%;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.subm:hover{
+    background-color: rgba(3, 136, 3, 0.973);
+    cursor: pointer;
+}
+
+.cenc{
+    background-color: rgb(184, 4, 4);
+    width: 90%;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.cenc:hover{
+    background-color: rgba(136, 3, 3, 0.973);
+    cursor: pointer;
+}
+
+.disp-none{
+    display: none;
 }
