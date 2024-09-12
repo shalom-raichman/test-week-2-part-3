@@ -5,29 +5,24 @@
 }
 
 body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 100vh;
     background-color: rgba(10, 44, 73, 0.918);
 }
 
 .add-edit{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
 }
 
 .force-table{
     height: 60vh;
-    /* background-color: aquamarine; */
 }
 
 .add-edit-header{
-    /* position: absolute; */
-    /* top: 0; */
     width: 100%;
     height: 70px;
     border-bottom: 3px solid rgb(4, 184, 4);
@@ -58,6 +53,7 @@ th{
     background-color: aliceblue;
     color: rgb(4, 184, 4);
     border: 1px solid white;
+    height: 50px;
 }
 
 td{
@@ -75,15 +71,23 @@ td{
     flex-direction: column;
 }
 
+.action:hover{
+    background-color: rgba(2, 139, 2, 0.774);
+    cursor: pointer;
+}
+
 .action{
     background-color: rgb(2, 139, 2);
     width: 90%;
     border-radius: 4px;
     text-align: center;
+    color: aliceblue;
+    margin: auto;
+    padding: 4px;
 }
 
 .add-edit-form{
-    width: 66%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +100,7 @@ td{
 
 .my-input{
     width: 90%;
+    height: 30px;
     border-radius: 4px;
     background-color: rgb(26, 61, 92);
     color: aliceblue;
@@ -105,10 +110,13 @@ td{
 .subm{
     background-color: rgb(4, 184, 4);
     width: 90%;
-    height: 20px;
+    height: 30px;
     border-radius: 4px;
     text-align: center;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subm:hover{
@@ -119,10 +127,13 @@ td{
 .cenc{
     background-color: rgb(184, 4, 4);
     width: 90%;
-    height: 20px;
+    height: 30px;
     border-radius: 4px;
     text-align: center;
-    color: aliceblue;
+    color: aliceblue;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cenc:hover{
