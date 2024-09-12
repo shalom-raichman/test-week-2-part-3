@@ -15,7 +15,7 @@ const fullName = document.querySelector("#full-name")
 const cencelBtn = document.querySelector(".cenc")
 const table = document.querySelector("table")
 const forceTable = document.querySelector(".force-table")
-const addEditHeader = document.querySelector("add-edit-header")
+const addEditHeader = document.querySelector(".add-edit-header")
 
 
 
@@ -98,8 +98,8 @@ const editPersonnal = (e) => {
     
     cencelBtn.classList.toggle("disp-none")
     forceTable.classList.toggle("disp-none")
-    
-
+    addEditHeader.textContent = "EDIT PERSONNAL"
+    addPersonnal.textContent = "Save Changes"
 }
 
 const loadPersonall = () => {
@@ -133,6 +133,8 @@ addPersonnal.addEventListener("click", e =>{
 cencelBtn.addEventListener("click", () => {
     cencelBtn.classList.toggle("disp-none")
     forceTable.classList.toggle("disp-none")
+    addEditHeader.textContent = "BATALION FORCE MANAGMENT"
+    addPersonnal.textContent = "Add Personnal"
 })
 
     loadPersonall()
