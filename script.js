@@ -4,7 +4,7 @@ const examplleObg = [
     rank: "turai",
     position: "israel",
     missionTime: 7,
-    status: "active"
+    status: "active",
 },
 ]
 
@@ -88,8 +88,23 @@ const removePersonnal = e => {
     
 }
 
-const lanchMission = () => {
-
+const lanchMission = e => {
+    let i = 8
+    setInterval(() => {
+        if (i> 0){
+            e.target.textContent = i
+        }else{
+            e.target.textContent = "mission completed"
+        }
+    }, 1000);
+    setInterval(() => {
+        if (i == 0){
+            clearInterval()
+        }
+        i -= 1
+    }, 1000)
+    
+    
 }
 
 const editPersonnal = (e) => {
@@ -100,6 +115,18 @@ const editPersonnal = (e) => {
     forceTable.classList.toggle("disp-none")
     addEditHeader.textContent = "EDIT PERSONNAL"
     addPersonnal.textContent = "Save Changes"
+    
+    const inputs = addPersonnal.parentElement.querySelectorAll(".my-input")
+    let [name, rank, position, platon, mission, status] = inputs
+    name.value = personnal.name
+    rank.value = personnal.rank
+    position.value = personnal.position
+    platon.value = personnal.platon
+    status.value = personnal.status
+    mission.value = personnal.missionTime
+
+    const editPersonnal = JSON.parse(localStorage.getItem("personnal") || "[]" ).filter(el => el.name != personnal.name)
+    localStorage.personnal = JSON.stringify(editPersonnal)
 }
 
 const loadPersonall = () => {
@@ -137,4 +164,4 @@ cencelBtn.addEventListener("click", () => {
     addPersonnal.textContent = "Add Personnal"
 })
 
-    loadPersonall()
+loadPersonall()
