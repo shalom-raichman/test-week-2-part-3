@@ -152,6 +152,11 @@ addPersonnal.addEventListener("click", e =>{
         status: status.value
     }
     const personnal = JSON.parse(localStorage.getItem("personnal"))
+    if(!personnal)
+        {
+            localStorage.setItem("personnal", "[]")
+            const personnal = JSON.parse(localStorage.getItem("personnal"))
+        }
     personnal.push(newObg)
     localStorage.personnal = JSON.stringify(personnal)
     location.reload()
